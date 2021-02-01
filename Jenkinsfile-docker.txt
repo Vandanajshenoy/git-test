@@ -1,4 +1,9 @@
 pipeline {
+	
+     environment {
+    registry = "aktechthoughts/simplilearn-devops-certification"
+    registryCredential = 'dockerhub'
+  }
     agent any
     stages {
         stage('One') {
